@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Aleww</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Web Aleww</h1>
+    </header>
+    <nav>
+
+        <br>
+
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+
+        <br>
+
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <h2>Formulir Pendaftaran</h2>
+            <p class="normal">Silahkan isi form dibawah ini</p>
+
+            <br>
+
+            <label for="username"><b>Username: </b></label>
+            <br>
+            <label>
+                <input class="input" type="text" name="username" required 
+                minlength="5" maxlength="20" placeholder="Masukkan Username Anda">
+            </label>
+
+            <br>
+
+            <label for="email"><b>Email: </b></label>
+            <br>
+            <label>
+            <input class="input" type="email" name="email" required
+            placeholder="Masukkan Email Anda">
+            </label>
+
+            <br>
+
+            <label for="password"><b>Password: </b></label>
+            <label>
+            <input class="input" type="password" name="password" required
+            minlength="8" placeholder="Masukkan Password Anda">
+            </label>
+            
+            <br>
+
+            <label for="confirm"><b>Konfirmasi Password: </b></label>
+            <label>
+            <input class="input" type="password" name="confirm" required
+            minlength="8" placeholder="Ulangi Password">
+            </label>
+
+            <br><br>
+
+            <label>Jenis Kelamin</label>
+
+            <br><br>
+
+            <label>Laki-Laki
+            <input class="gender" type="radio" name="gender"
+            value="male">
+            <br>
+            </label>
+            <label>Perempuan
+            <input class="gender" type="radio" name="gender"
+            value="female">
+            </label>
+
+            <hr>
+
+            <label>Apa Hobimu?</label>
+        <br>
+        <label class="hobi">
+            <input type="checkbox" name="hobi[]" value="musik">Musik
+            <input type="checkbox" name="hobi[]" value="olahraga">Olahraga
+            <input type="checkbox" name="hobi[]" value="Menggambar">Menggambar
+            <input type="checkbox" name="hobi[]" value="Ngoding">Ngoding
+            <input type="checkbox" name="hobi[]" value="Gaming">Gaming
+            <br>
+            <input type="checkbox" name="hobi[]" value="Memasak">Memasak
+            <input type="checkbox" name="hobi[]" value="Nonton Film">Nonton Film
+            <input type="checkbox" name="hobi[]" value="Traveling">Traveling
+            <input type="checkbox" name="hobi[]" value="Fotografi">Fotografi
+            <input type="checkbox" name="hobi[]" value="Desain">Desain
+        </label>
+
+        <hr>
+
+        <label for="tanggal">Tanggal Lahir: </label>
+        <br>
+        <label>
+            <input class="input" type="date" name="tanggal" required>
+        </label>
+
+        <br>
+
+        <label for="kota">Dimana Kota Anda?</label>
+        <br>
+        <select class="input" name="kota" required>
+            <option value="" disabled selected>-- Pilih Kota Anda --</option>
+            <option value="1">Jakarta</option>
+            <option value="2">Bekasi</option>
+            <option value="3">Bogor</option>
+            <option value="4">Karawang</option>
+            <option value="5">Semarang</option>
+            <option value="6">Malang</option>
+            <option value="7">Depok</option>
+            <option value="8">Tasikmalaya</option>
+            <option value="9">Bandung</option>
+            <option value="10">Surabaya</option>
+            <option value="11">Makassar</option>
+            <option value="12">Pekanbaru</option>
+        </select>
+
+        <label for="komentar">Pesan Tambahan: </label>
+        <br>
+        <textarea name="komentar" rows="6" placeholder="Tulis pesan di sini..."></textarea>
+
+        <hr>
+            
+            <button class="btn">Kirim</button>
+
+        </section>
+        <aside class="sidebar">
+
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan atau informasi.</p>
+            <p class="normal">Silahkan yang mau donasi</p>
+            <br>
+            <a href="https://tako.id/Aleww">Donasi</a>
+
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy;2026 halaman Web Aleww. dibuat dengan CSS.</p>
+    </footer>
+</body>
+</html>
