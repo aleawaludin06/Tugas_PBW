@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 10px; /* opsional biar halus */
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #323232;
+}
