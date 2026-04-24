@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+        margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+
+        <label for="username">Username: </label>
+        <label>
+            <input type="text" name="username" required 
+            minlength="5" maxlength="20" placeholder="Masukkan Username Anda">
+        </label>
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <label>
+            <input type="email" name="email" required
+            placeholder="Masukkan Email Anda">
+        </label>
+
+        <br><br>
+
+        <label for="password">Password: </label>
+        <label>
+            <input type="password" name="password" required
+            minlength="8" placeholder="Masukkan Password Anda">
+        </label>
+
+        <br><br>
+
+        <label for="confirm">Konfirmasi Password: </label>
+        <label>
+            <input type="password" name="confirm" required
+            minlength="8" placeholder="Ulangi Password">
+        </label>
+
+        <br><br>
+
+        <label>Apa Gender Anda: </label>
+        <label>
+            <input type="radio" name="gender"
+            value="male">Laki-Laki
+        </label>
+        <label>
+            <input type="radio" name="gender"
+            value="female">Perempuan
+        </label>
+
+        <br><br>
+
+        <label for="Tempat">Tempat Lahir: </label>
+        <select name="tempat" required>
+            <option value="" disabled selected>-- Pilih Kota Anda --</option>
+            <option value="1">Jakarta</option>
+            <option value="2">Bekasi</option>
+            <option value="3">Bogor</option>
+            <option value="4">Karawang</option>
+            <option value="5">Semarang</option>
+            <option value="6">Malang</option>
+            <option value="7">Depok</option>
+            <option value="8">Tasikmalaya</option>
+            <option value="9">Bandung</option>
+            <option value="10">Surabaya</option>
+            <option value="11">Makassar</option>
+            <option value="12">Pekanbaru</option>
+        </select>
+
+        <br><br>
+
+        <label for="tanggal">Tanggal Lahir: </label>
+        <label>
+            <input type="date" name="tanggal" required>
+        </label>
+
+        <br><br>
+
+        <label for="kota">Dimana Kota Anda?</label>
+        <select name="kota" required>
+            <option value="" disabled selected>-- Pilih Kota Anda --</option>
+            <option value="1">Jakarta</option>
+            <option value="2">Bekasi</option>
+            <option value="3">Bogor</option>
+            <option value="4">Karawang</option>
+            <option value="5">Semarang</option>
+            <option value="6">Malang</option>
+            <option value="7">Depok</option>
+            <option value="8">Tasikmalaya</option>
+            <option value="9">Bandung</option>
+            <option value="10">Surabaya</option>
+            <option value="11">Makassar</option>
+            <option value="12">Pekanbaru</option>
+        </select>
+
+        <br><br>
+
+        <label>Apa Hobimu?</label>
+        <br>
+        <label>
+            <input type="checkbox" name="hobi[]" value="musik">Musik
+            <input type="checkbox" name="hobi[]" value="olahraga">Olahraga
+            <input type="checkbox" name="hobi[]" value="Menggambar">Menggambar
+            <input type="checkbox" name="hobi[]" value="Ngoding">Ngoding
+            <input type="checkbox" name="hobi[]" value="Gaming">Gaming
+            <br>
+            <input type="checkbox" name="hobi[]" value="Memasak">Memasak
+            <input type="checkbox" name="hobi[]" value="Nonton Film">Nonton Film
+            <input type="checkbox" name="hobi[]" value="Traveling">Traveling
+            <input type="checkbox" name="hobi[]" value="Fotografi">Fotografi
+            <input type="checkbox" name="hobi[]" value="Desain">Desain
+        </label>
+
+        <br><br>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Upload File:</label>
+        <label>
+            <input type="file" name="file" id="file">
+        </label>
+        
+        <br><br>
+
+        <button type="submit">Kirim File</button>
+
+</body>
+</html>
